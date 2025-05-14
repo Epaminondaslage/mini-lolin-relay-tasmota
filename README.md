@@ -3,10 +3,12 @@
 
 Instalação do firmware **Tasmota** no **Wemos D1 Mini (ESP8266)** com o **módulo relé V2 acoplado**, permitindo controle remoto via Wi-Fi, MQTT e integração com Home Assistant.
 
-# Repositoris com assuntos relacionados
+--
 
-http://github.com/epaminondaslage/mini-lolin-relay-mqtt
-http://github.com/epaminondaslage/Wemos-Mini-Lolin
+## Repositoris com assuntos relacionados
+
+* http://github.com/epaminondaslage/mini-lolin-relay-mqtt
+* http://github.com/epaminondaslage/Wemos-Mini-Lolin
 
 ---
 
