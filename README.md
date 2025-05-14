@@ -5,7 +5,7 @@ Instalação do firmware **Tasmota** no **Wemos D1 Mini (ESP8266)** com o **mód
 
 --
 
-## Repositoris com assuntos relacionados
+## Repositorios com assuntos relacionados
 
 * http://github.com/epaminondaslage/mini-lolin-relay-mqtt
 * http://github.com/epaminondaslage/Wemos-Mini-Lolin
