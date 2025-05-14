@@ -25,7 +25,7 @@ Instalação do firmware **Tasmota** no **Wemos D1 Mini (ESP8266)** com o **mód
 ## 📸 Imagens dos Componentes
 
 ### ▶️ Wemos D1 Mini (ESP8266)
-![Wemos D1 Mini](https://ae01.alicdn.com/kf/Hf30d701a78a547efb7bfe28ad06528d8l.jpg)
+<img src="https://github.com/Epaminondaslage/D1-Mini-Lolin/blob/master/Figuras/wemos di mini lolin.JPG" height="150" width="200">
 
 ### ▶️ Shield Relé V2 para Wemos
 ![Módulo Relé V2](https://ae01.alicdn.com/kf/HTB1k1xHbUCF3KVjSZJnq6znHFXaC.jpg)
