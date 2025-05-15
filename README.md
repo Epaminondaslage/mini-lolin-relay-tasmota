@@ -138,8 +138,8 @@ Topic: tasmota_%06X
 Full Topic: %prefix%/%topic%/
 ```
 3. Clique em **Save** e o dispositivo se conectará ao broker MQTT
-4. 
-<img src="./img/tela12.jpg" alt="Tela 13" width="40%">
+   
+<img src="./img/tela13.jpg" alt="Tela 13" width="40%">
 ---
 
 ##  Interface principal
