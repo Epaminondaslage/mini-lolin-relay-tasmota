@@ -100,12 +100,16 @@ Ao conectar à rede Wi-Fi, acesse o IP mostrado. Esta é a interface inicial do 
 ## Seleção de tipo de módulo
 Na opção **Module**, escolha o tipo de dispositivo que está utilizando. Por padrão, o Sonoff Basic é selecionado, mas você pode alterar para **Generic** se estiver usando outro hardware. 
 
+<img src="./img/tela10.jpg" alt="Tela 9" width="40%">
+
 ### Configurar o Módulo Relé
 
 1. Acesse o IP do dispositivo na rede local
 2. Vá em **Configuration > Configure Module**
 3. Em “Module Type”, selecione: `Generic (18)`
-4. Configure os GPIOs:
+
+## Mapeamento dos pinos (GPIOs)
+Configure os pinos GPIO conforme necessário. No exemplo, o **GPIO5** está configurado como **Relay**.
 
 | GPIO        | Função no Tasmota | Conectado a...     |
 |-------------|-------------------|---------------------|
@@ -113,15 +117,6 @@ Na opção **Module**, escolha o tipo de dispositivo que está utilizando. Por p
 | GPIO0 (D3)  | Switch1           | Botão físico (opcional) |
 
 5. Salve e aguarde o reinício
-
-
-
----
-
-## Mapeamento dos pinos (GPIOs)
-Configure os pinos GPIO conforme necessário. No exemplo, o **GPIO5** está configurado como **Relay**.
-
-<img src="./img/tela10.jpg" alt="Tela 9" width="40%">
 
 ---
 ## Menu de configuração
@@ -146,14 +141,14 @@ Full Topic: %prefix%/%topic%/
 
 ---
 
-## Tela 10 - Tela principal após salvar configurações
+##  Tela principal após salvar configurações
 Depois de salvar as configurações, o módulo será reiniciado e a interface refletirá as alterações, incluindo o nome do módulo (ex: "Generic").
 
 <img src="./img/tela11.jpg" alt="Tela 10" width="40%">
 
 ---
 
-## Tela 11 - Retorno à interface principal
+##  Retorno à interface principal
 Você pode usar o botão **Toggle** para testar o funcionamento do relé ou dispositivo configurado.
 
 <img src="./img/tela12.jpg" alt="Tela 11" width="40%">
