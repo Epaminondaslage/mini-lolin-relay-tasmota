@@ -115,6 +115,8 @@ Configure os pinos GPIO conforme necessário. No exemplo, o **GPIO5** está conf
 | GPIO5 (D1)  | Relay1            | Entrada do Relé     |
 | GPIO0 (D3)  | Switch1           | Botão físico (opcional) |
 
+<img src="./img/tela11.jpg" alt="Tela 10" width="40%">
+
 5. Salve e aguarde o reinício
 
 ---
@@ -136,17 +138,11 @@ Full Topic: %prefix%/%topic%/
 ```
 
 3. Clique em **Save** e o dispositivo se conectará ao broker MQTT
-   
----
-
-##  Tela principal após salvar configurações
-Depois de salvar as configurações, o módulo será reiniciado e a interface refletirá as alterações, incluindo o nome do módulo (ex: "Generic").
-
-<img src="./img/tela11.jpg" alt="Tela 10" width="40%">
 
 ---
 
-##  Retorno à interface principal
+##  Interface principal
+
 Você pode usar o botão **Toggle** para testar o funcionamento do relé ou dispositivo configurado.
 
 <img src="./img/tela12.jpg" alt="Tela 11" width="40%">
