@@ -80,7 +80,7 @@ Aguarde enquanto o firmware Tasmota é gravado. Essa etapa pode levar alguns min
 ## Configuração de Wi-Fi
 Após a gravação, o Tasmota solicitará os dados da sua rede Wi-Fi. Informe o SSID e a senha e clique em **Connect**.
 
-
+<img src="./img/tela6.jpg" alt="Tela 6" width="40%">
 
 Caso pule esta etapa, o wifi pode ser confifurado posteriormente, conforme o procedimento:
 
@@ -94,7 +94,8 @@ Caso pule esta etapa, o wifi pode ser confifurado posteriormente, conforme o pro
 ## Tela inicial do Tasmota
 Ao conectar à rede Wi-Fi, acesse o IP mostrado. Esta é a interface inicial do Tasmota.
 
-<img src="./img/tela6.jpg" alt="Tela 6" width="40%">
+<img src="./img/tela9.jpg" alt="Tela 8" width="40%">
+
 
 ## Seleção de tipo de módulo
 Na opção **Module**, escolha o tipo de dispositivo que está utilizando. Por padrão, o Sonoff Basic é selecionado, mas você pode alterar para **Generic** se estiver usando outro hardware. 
@@ -113,7 +114,7 @@ Na opção **Module**, escolha o tipo de dispositivo que está utilizando. Por p
 
 5. Salve e aguarde o reinício
 
-<img src="./img/tela9.jpg" alt="Tela 8" width="40%">
+
 
 ---
 
