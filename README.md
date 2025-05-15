@@ -64,6 +64,7 @@ Você deverá apagar a memória do dispositivo antes da gravação. Marque a cai
 
 <img src="./img/tela3.jpg" alt="Tela 3" width="40%">
 
+<img src="./img/tela5.jpg" alt="Tela 5" width="40%">
 ---
 
 ## Progresso da instalação
@@ -76,7 +77,7 @@ Aguarde enquanto o firmware Tasmota é gravado. Essa etapa pode levar alguns min
 ## Configuração de Wi-Fi
 Após a gravação, o Tasmota solicitará os dados da sua rede Wi-Fi. Informe o SSID e a senha e clique em **Connect**.
 
-<img src="./img/tela5.jpg" alt="Tela 5" width="40%">
+
 
 
 Caso pule esta etapa, o wifi pode ser confifurado posteriormente, conforme o procedimento:
