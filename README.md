@@ -92,7 +92,6 @@ Ao conectar à rede Wi-Fi, acesse o IP mostrado. Esta é a interface inicial do 
 
 <img src="./img/tela6.jpg" alt="Tela 6" width="40%">
 
-
 ## Seleção de tipo de módulo
 Na opção **Module**, escolha o tipo de dispositivo que está utilizando. Por padrão, o Sonoff Basic é selecionado, mas você pode alterar para **Generic** se estiver usando outro hardware. 
 
