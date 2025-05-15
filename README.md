@@ -99,77 +99,77 @@ Full Topic: %prefix%/%topic%/
 ## Tela 1 - Seleção da porta serial
 Conecte seu dispositivo ao computador. O navegador solicitará permissão para acessar a porta serial. Selecione a porta correta (ex: `COM6`) e clique em **Conectar**.
 
-<img src="./img/tela1.jpg" alt="Tela 1" width="60%">
+<img src="./img/tela1.jpg" alt="Tela 1" width="40%">
 
 ---
 
 ## Tela 2 - Início da instalação via navegador
 Clique em **Install Tasmota Lite** para iniciar o processo de gravação do firmware.
 
-<img src="tela2.jpg" alt="Tela 2" width="60%">
+<img src="./img/tela2.jpg" alt="Tela 2" width="40%">
 
 ---
 
 ## Tela 3 - Confirmação para apagar o dispositivo
 Você poderá apagar a memória do dispositivo antes da gravação. Marque a caixa **Erase device** caso deseje apagar tudo.
 
-<img src="tela3.jpg" alt="Tela 3" width="60%">
+<img src="./img/tela3.jpg" alt="Tela 3" width="40%">
 
 ---
 
 ## Tela 4 - Progresso da instalação
 Aguarde enquanto o firmware Tasmota é gravado. Essa etapa pode levar alguns minutos.
 
-<img src="tela4.jpg" alt="Tela 4" width="60%">
+<img src="./img/tela4.jpg" alt="Tela 4" width="40%">
 
 ---
 
 ## Tela 5 - Configuração de Wi-Fi
 Após a gravação, o Tasmota solicitará os dados da sua rede Wi-Fi. Informe o SSID e a senha e clique em **Connect**.
 
-<img src="tela5.jpg" alt="Tela 5" width="60%">
+<img src="./img/tela5.jpg" alt="Tela 5" width="40%">
 
 ---
 
 ## Tela 6 - Tela inicial do Tasmota
 Ao conectar à rede Wi-Fi, acesse o IP mostrado. Esta é a interface inicial do Tasmota.
 
-<img src="tela6.jpg" alt="Tela 6" width="60%">
+<img src="./img/tela6.jpg" alt="Tela 6" width="40%">
 
 ---
 
 ## Tela 7 - Menu de configuração
 Clique em **Configuration** para acessar as opções de configuração como WiFi, MQTT, módulo, etc.
 
-<img src="tela8.jpg" alt="Tela 7" width="60%">
+<img src="./img/tela8.jpg" alt="Tela 7" width="40%">
 
 ---
 
 ## Tela 8 - Seleção de tipo de módulo
 Na opção **Module**, escolha o tipo de dispositivo que está utilizando. Por padrão, o Sonoff Basic é selecionado, mas você pode alterar para **Generic** se estiver usando outro hardware.
 
-<img src="tela9.jpg" alt="Tela 8" width="60%">
+<img src="./img/tela9.jpg" alt="Tela 8" width="40%">
 
 ---
 
 ## Tela 9 - Mapeamento dos pinos (GPIOs)
 Configure os pinos GPIO conforme necessário. No exemplo, o GPIO5 está configurado como **Relay**.
 
-<img src="tela10.jpg" alt="Tela 9" width="60%">
+<img src="./img/tela10.jpg" alt="Tela 9" width="40%">
 
 ---
 
 ## Tela 10 - Tela principal após salvar configurações
 Depois de salvar as configurações, o módulo será reiniciado e a interface refletirá as alterações, incluindo o nome do módulo (ex: "Generic").
 
-<img src="tela11.jpg" alt="Tela 10" width="60%">
+<img src="./img/tela11.jpg" alt="Tela 10" width="40%">
 
 ---
 
 ## Tela 11 - Retorno à interface principal
 Você pode usar o botão **Toggle** para testar o funcionamento do relé ou dispositivo configurado.
 
-<img src="tela12.jpg" alt="Tela 11" width="60%">
+<img src="./img/tela12.jpg" alt="Tela 11" width="40%">
 
 ## 🧪 Etapa 6 – Testar e Integrar
 
