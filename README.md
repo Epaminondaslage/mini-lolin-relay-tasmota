@@ -45,17 +45,20 @@ Instalação do firmware **Tasmota** no **Wemos D1 Mini (ESP8266)** com o **mód
 
 ## Instalar o Firmware Tasmota via Navegador
 
-1. Acesse: [https://tasmota.github.io/install](https://tasmota.github.io/install)
-2. Conecte seu dispositivo ao computador. O navegador solicitará permissão para acessar a porta serial. 
-3. Selecione a porta correta (ex: `COM6`) e clique em **Conectar**2. Clique em **"Connect"**
+Acesse: [https://tasmota.github.io/install](https://tasmota.github.io/install)
 
 <img src="./img/tela1.jpg" alt="Tela 1" width="40%">
+
+Conecte seu dispositivo ao computador. O navegador solicitará permissão para acessar a porta serial. 
+
+Selecione a porta correta (ex: `COM6`) e clique em **Conectar**2. Clique em **"Connect"**
+
+<img src="./img/tela2.jpg" alt="Tela 2" width="20%">
 
 ---
 
 Clique em **Install Tasmota Lite** para iniciar o processo de gravação do firmware.
 
-<img src="./img/tela2.jpg" alt="Tela 2" width="20%">
 <img src="./img/tela3.jpg" alt="Tela 3" width="40%">
 ---
 
