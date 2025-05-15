@@ -55,7 +55,7 @@ Instalação do firmware **Tasmota** no **Wemos D1 Mini (ESP8266)** com o **mód
 
 Clique em **Install Tasmota Lite** para iniciar o processo de gravação do firmware.
 
-<img src="./img/tela2.jpg" alt="Tela 2" width="200%">
+<img src="./img/tela2.jpg" alt="Tela 2" width="20%">
 <img src="./img/tela3.jpg" alt="Tela 3" width="40%">
 ---
 
