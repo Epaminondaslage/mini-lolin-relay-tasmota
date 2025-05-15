@@ -32,6 +32,7 @@ Instalação do firmware **Tasmota** no **Wemos D1 Mini (ESP8266)** com o **mód
 <img src="https://github.com/Epaminondaslage/mini-lolin-relay-tasmota/blob/main/rele.jpg" height="150" width="200">
 
 <img src="https://github.com/Epaminondaslage/mini-lolin-relay-tasmota/blob/main/rele1.jpg" height="150" width="200">
+
 ---
 
 ##  Montagem do Hardware
@@ -41,9 +42,9 @@ Instalação do firmware **Tasmota** no **Wemos D1 Mini (ESP8266)** com o **mód
    
 ---
 
-# Instalação e Configuração do Tasmota
+# Instalação e Configuração do Tasmota via Navegador (CRHOME)
 
-## Instalar o Firmware Tasmota via Navegador
+## Acessar o site 
 
 Acesse: [https://tasmota.github.io/install](https://tasmota.github.io/install)
 
@@ -60,12 +61,14 @@ Selecione a porta correta (ex: `COM6`) e clique em **Conectar**2. Clique em **"C
 Clique em **Install Tasmota Lite** para iniciar o processo de gravação do firmware.
 
 <img src="./img/tela3.jpg" alt="Tela 3" width="40%">
+
 ---
 
 ## Confirmação para apagar o dispositivo
 Você deverá apagar a memória do dispositivo antes da gravação. Marque a caixa **Erase device** caso deseje apagar tudo.
 
 <img src="./img/tela4.jpg" alt="Tela 4" width="40%">
+
 ---
 
 ## Progresso da instalação
