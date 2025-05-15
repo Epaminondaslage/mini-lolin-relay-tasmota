@@ -94,11 +94,12 @@ Caso pule esta etapa, o wifi pode ser confifurado posteriormente, conforme o pro
 ## Tela inicial do Tasmota
 Ao conectar à rede Wi-Fi, acesse o IP mostrado. Esta é a interface inicial do Tasmota.
 
-<img src="./img/tela9.jpg" alt="Tela 8" width="40%">
-
+<img src="./img/tela8.jpg" alt="Tela 7" width="40%">
 
 ## Seleção de tipo de módulo
 Na opção **Module**, escolha o tipo de dispositivo que está utilizando. Por padrão, o Sonoff Basic é selecionado, mas você pode alterar para **Generic** se estiver usando outro hardware. 
+
+<img src="./img/tela9.jpg" alt="Tela 8" width="40%">
 
 1. Acesse o IP do dispositivo na rede local
 2. Vá em **Configuration > Configure Module**
@@ -135,8 +136,7 @@ Full Topic: %prefix%/%topic%/
 ```
 
 3. Clique em **Save** e o dispositivo se conectará ao broker MQTT
-<img src="./img/tela8.jpg" alt="Tela 7" width="40%">
-
+   
 ---
 
 ##  Tela principal após salvar configurações
