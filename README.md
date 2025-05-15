@@ -73,6 +73,7 @@ Você deverá apagar a memória do dispositivo antes da gravação. Marque a cai
 
 ## Progresso da instalação
 Aguarde enquanto o firmware Tasmota é gravado. Essa etapa pode levar alguns minutos.
+
 <img src="./img/tela5.jpg" alt="Tela 5" width="40%">
 
 ---
@@ -136,9 +137,9 @@ Password: suasenha
 Topic: tasmota_%06X
 Full Topic: %prefix%/%topic%/
 ```
-
 3. Clique em **Save** e o dispositivo se conectará ao broker MQTT
-
+4. 
+<img src="./img/tela12.jpg" alt="Tela 13" width="40%">
 ---
 
 ##  Interface principal
