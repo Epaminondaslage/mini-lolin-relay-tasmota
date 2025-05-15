@@ -60,7 +60,7 @@ Clique em **Install Tasmota Lite** para iniciar o processo de gravação do firm
 ---
 
 ## Confirmação para apagar o dispositivo
-Você poderá apagar a memória do dispositivo antes da gravação. Marque a caixa **Erase device** caso deseje apagar tudo.
+Você deverá apagar a memória do dispositivo antes da gravação. Marque a caixa **Erase device** caso deseje apagar tudo.
 
 <img src="./img/tela3.jpg" alt="Tela 3" width="40%">
 
@@ -79,7 +79,7 @@ Após a gravação, o Tasmota solicitará os dados da sua rede Wi-Fi. Informe o 
 <img src="./img/tela5.jpg" alt="Tela 5" width="40%">
 
 
-Caso pule esta etapa pode ser condifurado posteriormente para sua rede  Wi-Fi
+Caso pule esta etapa, o wifi pode ser confifurado posteriormente, conforme o procedimento:
 
 1. Ligar o  ESP e ele entrará em modo AP com nome **`tasmota-XXXX`**
 2. Conecte-se a esse Wi-Fi (senha: `tasmota123`)
