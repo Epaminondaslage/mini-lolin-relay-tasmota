@@ -100,13 +100,11 @@ Ao conectar à rede Wi-Fi, acesse o IP mostrado. Esta é a interface inicial do 
 ## Seleção de tipo de módulo
 Na opção **Module**, escolha o tipo de dispositivo que está utilizando. Por padrão, o Sonoff Basic é selecionado, mas você pode alterar para **Generic** se estiver usando outro hardware. 
 
-<img src="./img/tela10.jpg" alt="Tela 9" width="40%">
-
-### Configurar o Módulo Relé
-
 1. Acesse o IP do dispositivo na rede local
 2. Vá em **Configuration > Configure Module**
 3. Em “Module Type”, selecione: `Generic (18)`
+
+<img src="./img/tela10.jpg" alt="Tela 9" width="40%">
 
 ## Mapeamento dos pinos (GPIOs)
 Configure os pinos GPIO conforme necessário. No exemplo, o **GPIO5** está configurado como **Relay**.
