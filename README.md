@@ -184,10 +184,6 @@ Você pode usar o botão **Toggle** para testar o funcionamento do relé ou disp
 - Pressione **TOGGLE** para acionar o relé
 - Monitore a conexão MQTT no broker (ex: com MQTT Explorer)
 
-#  Configuração Tasmota: Manter Relé (GPIO5) Ligado por 3 Segundos
-
-Como configurar o relé conectado à **GPIO5 (D1)** no Mini Lolin D1 (ESP8266) para **ligar por 3 segundos** sempre que acionado, usando **regras (Rules)** no Tasmota.
-
 ---
 
 ##  Configuração do GPIO no Tasmota
