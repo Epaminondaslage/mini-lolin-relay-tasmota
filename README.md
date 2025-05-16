@@ -124,13 +124,13 @@ Configure os pinos GPIO conforme necessário. No exemplo, o **GPIO5** está conf
 ## Menu de configuração
 Clique em **Configuration** para acessar as opções de configuração como WiFi, MQTT, módulo, etc.
 
-### Configurar o Broker MQTT
+### Configurar o Broker MQTT (caso tenha um)
 
 1. Vá em **Configuration > Configure MQTT**
 2. Preencha os campos conforme abaixo:
 
 ```
-Host: 10.0.0.100 (ip do Broker)
+Host: 192.168.0.10 (ip do Broker- caso tenha)
 Port: 1883
 User: seuusuario
 Password: suasenha
