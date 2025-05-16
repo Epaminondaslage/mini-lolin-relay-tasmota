@@ -42,6 +42,36 @@ Instalação do firmware **Tasmota** no **Wemos D1 Mini (ESP8266)** com o **mód
    
 ---
 
+##  Tabela de GPIOs recomendados para Botão e Relé no Mini Lolin D1 (ESP8266)
+
+| Função    | Nome na placa | GPIO   | Configuração no Tasmota | Observações                         |
+|-----------|----------------|--------|---------------------------|--------------------------------------|
+| Relé 1    | D1             | GPIO5  | Relay1 (21)               | Recomendado, seguro no boot          |
+| Relé 2    | D5             | GPIO14 | Relay2 (22)               | Opcional                             |
+| Relé 3    | D6             | GPIO12 | Relay3 (23)               | Opcional                             |
+| Relé 4    | D7             | GPIO13 | Relay4 (24)               | Opcional                             |
+| Botão 1   | D2             | GPIO4  | Button1 (17)              | Recomendado, sem problemas           |
+| Botão 2 ⚠️ | D3             | GPIO0  | Button2 (18)              | ⚠️ Deve estar em HIGH no boot        |
+| Botão 3 ⚠️ | D4             | GPIO2  | Button3 (19)              | ⚠️ Deve estar em HIGH no boot        |
+
+---
+
+### Dicas
+
+- **Relés**: preferencialmente use GPIOs **5, 14, 12, 13** (D1, D5, D6, D7).
+- **Botões**: **GPIO4 (D2)** é excelente para isso, sem conflitos de boot.
+- **Evite** usar GPIO0, GPIO2 e GPIO15 com relés ou botões, a menos que saiba lidar com suas **restrições de boot**.
+
+---
+
+### Importante
+
+- Sempre conecte **botões entre o GPIO e o GND**.
+- O **resistor de pull-up interno** é ativado automaticamente pelo Tasmota para entrada digital.
+- Relés ativos em nível **baixo (LOW)** devem ser testados para não ligarem sozinhos ao iniciar o dispositivo.
+
+
+
 # Instalação e Configuração do Tasmota via Navegador (CRHOME)
 
 ## Acessar o site 
