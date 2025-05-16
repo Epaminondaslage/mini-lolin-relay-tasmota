@@ -361,5 +361,105 @@ Exemplo de resposta:
 - Pode ser usado em conjunto com botão físico ou comandos MQTT
 
 ---
+# 📘 Comandos Tasmota – Guia Rápido
+
+Este documento reúne os principais comandos do Tasmota para controle, automação, configuração MQTT, regras e diagnóstico.
+
+---
+
+## 🔌 Comandos de energia (relés e saídas)
+
+| Comando         | Função                             |
+|-----------------|-------------------------------------|
+| `Power1 ON`     | Liga o relé 1                      |
+| `Power1 OFF`    | Desliga o relé 1                   |
+| `Power1 TOGGLE` | Inverte o estado do relé 1         |
+| `Power2 ON`     | Liga o relé 2 (se configurado)     |
+| `Power2 OFF`    | Desliga o relé 2                   |
+
+---
+
+## ⏱️ Temporizador (PulseTime)
+
+| Comando           | Função                                         |
+|-------------------|------------------------------------------------|
+| `PulseTime1 30`   | Liga o relé 1 por 3 segundos                   |
+| `PulseTime1 0`    | Desativa o desligamento automático do relé 1  |
+| `PulseTime2 50`   | Liga o relé 2 por 5 segundos (se houver)       |
+
+---
+
+## 📡 Configurações MQTT
+
+| Comando                    | Função                                     |
+|----------------------------|--------------------------------------------|
+| `MqttHost 192.168.0.5`     | Define o IP do broker MQTT                 |
+| `MqttPort 1883`            | Define a porta do MQTT                     |
+| `MqttUser usuario`         | Define o nome de usuário do MQTT           |
+| `MqttPassword senha`       | Define a senha do MQTT                     |
+| `Topic nome_do_dispositivo` | Define o tópico MQTT principal           |
+| `FullTopic %prefix%/%topic%/` | Define o modelo de tópico MQTT padrão |
+
+---
+
+## 🔁 Regras (Rules)
+
+| Comando                                      | Função                                         |
+|----------------------------------------------|------------------------------------------------|
+| `Rule1 on Power1#State=1 do Power1 0 endon`  | Desliga o relé 1 assim que for ligado         |
+| `Rule1 on Power1#State=1 do backlog Delay 30; Power1 0 endon` | Desliga o relé 1 após 3s |
+| `Rule1 1`                                    | Ativa a regra 1                                |
+| `Rule1 0`                                    | Desativa a regra 1                             |
+| `Rule1 ""`                                   | Apaga a regra 1                                |
+| `Rule2`, `Rule3`                             | Idem para outras regras                        |
+
+---
+
+## ⚙️ Configurações gerais
+
+| Comando           | Função                                         |
+|-------------------|------------------------------------------------|
+| `SetOption0 1`    | Ativa menu avançado na interface              |
+| `SetOption13 1`   | Usa botão físico como interruptor (toggle)    |
+| `SetOption32 1`   | Liga o relé automaticamente ao boot           |
+| `SetOption114 1`  | Ignora comandos MQTT duplicados               |
+| `TelePeriod 300`  | Define intervalo das mensagens de telemetria (em segundos) |
+
+---
+
+## 🧪 Diagnóstico e debug
+
+| Comando         | Função                                     |
+|-----------------|---------------------------------------------|
+| `Status 0`      | Exibe todas as informações do dispositivo  |
+| `Status 10`     | Mostra status do sensor e energia          |
+| `Restart 1`     | Reinicia o dispositivo                     |
+| `IPAddress1`    | Mostra o IP atual                          |
+| `WifiScan`      | Lista redes Wi-Fi próximas                 |
+| `Upgrade 1`     | Inicia atualização OTA                     |
+
+---
+
+## 🔒 Segurança e Acesso
+
+| Comando             | Função                                   |
+|---------------------|-------------------------------------------|
+| `WebPassword senha` | Define a senha para a interface web      |
+| `Password senha`    | Define senha para acesso remoto (MQTT/API) |
+
+---
+
+## 🛠️ Comando combinado com Backlog
+
+Você pode agrupar vários comandos em uma única linha:
+
+```bash
+Backlog MqttHost 192.168.0.5; MqttUser admin; MqttPassword planeta
+```
+
+---
+
+Este guia cobre os comandos essenciais. Tasmota possui centenas de comandos adicionais para sensores, displays, timers, dimmers, IR, BLE, Zigbee e mais.  
+Consulte a [documentação oficial](https://tasmota.github.io/docs/Commands/) para explorar mais.
 
 
