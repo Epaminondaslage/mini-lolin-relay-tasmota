@@ -198,45 +198,88 @@ Como configurar o relé conectado à **GPIO5 (D1)** no Mini Lolin D1 (ESP8266) p
 
 ---
 
-## Regra para ligar o relé por 3 segundos
+# 🧠 Uso de Regras (Rules) no Tasmota
 
-1. Acesse o Tasmota via navegador: `http://IP_DO_DISPOSITIVO`
-2. Vá até o menu: **Console**
-3. Insira os comandos abaixo:
+O Tasmota permite criar **regras (rules)** para executar ações automáticas com base em eventos, como ligar ou desligar um relé após um tempo, ao pressionar um botão ou ao receber um comando MQTT.
+
+---
+
+## 🧩 Estrutura básica de uma regra
+
+```bash
+Rule1 on <EVENTO> do <AÇÃO> endon
+```
+
+Você pode usar até 3 regras: `Rule1`, `Rule2` e `Rule3`.
+
+---
+
+## 📌 Exemplo prático: ligar o relé no D1 (GPIO5) por 3 segundos
+
+### 🛠️ Configuração
+
+- **GPIO5 (D1)** configurado como `Relay1 (21)` no menu `Configure Module`
+- A regra será ativada quando o relé for ligado e desligará automaticamente após 3 segundos
+
+### 📋 Comando para definir a regra:
 
 ```bash
 Rule1 on Power1#State=1 do backlog Delay 30; Power1 0 endon
+```
+
+### ✔️ Ativar a regra:
+
+```bash
 Rule1 1
 ```
 
 ---
 
-###  Explicação
+## 📖 Explicação do exemplo
 
-- `Power1#State=1`: Detecta quando o relé é ligado
-- `Delay 30`: Aguarda 3 segundos (30 × 0,1s)
-- `Power1 0`: Desliga o relé
-- `Rule1 1`: Ativa a regra 1
+- `on Power1#State=1` → dispara a regra quando o relé 1 for ligado
+- `backlog Delay 30; Power1 0` → espera 3 segundos (30 × 0.1s) e desliga o relé
+- `endon` → fim da definição da regra
 
 ---
 
-##  Teste
+## 🔍 Como verificar a regra atual
 
-- **Via botão físico**: Certifique-se de que um botão está conectado e configurado como `Button1 (17)` em outro GPIO.
-- **Via MQTT**: Envie o comando:
+No console do Tasmota, digite:
 
 ```bash
-cmnd/NOME_DO_TOPICO/Power1 ON
+Rule1
 ```
-
-O relé ligará por 3 segundos e desligará automaticamente.
 
 ---
 
-##  Observações
+## 🔧 Comandos úteis
 
-- Certifique-se de que a **GPIO5** está configurada corretamente como `Relay1 (21)`
-- A lógica da regra serve para **qualquer GPIO**, desde que você use o `PowerX` correspondente (Power1, Power2, etc.)
+| Ação                         | Comando             |
+|------------------------------|---------------------|
+| Ativar a regra               | `Rule1 1`           |
+| Desativar a regra            | `Rule1 0`           |
+| Limpar a regra               | `Rule1 ""`          |
+| Ver conteúdo da regra        | `Rule1`             |
+
+---
+
+## 🧪 Teste
+
+1. Defina e ative a regra como mostrado acima
+2. Ligue o relé com `Power1 ON` (via botão, MQTT ou interface)
+3. Ele desligará automaticamente após 3 segundos
+
+---
+
+## ⚠️ Dica importante
+
+- Regra e `PulseTime` **não devem ser usados ao mesmo tempo** para o mesmo relé, pois podem gerar conflitos
+- Use `Rule` se você quiser **lógicas mais complexas** que `PulseTime` não permite
+
+---
+
+Regras são muito poderosas e podem responder a botões físicos, sensores, horário, comandos MQTT e muito mais.
 
 ---
 # ⏱️ Uso do PulseTime no Tasmota
@@ -323,6 +366,4 @@ Exemplo de resposta:
 
 ---
 
-
----
 
