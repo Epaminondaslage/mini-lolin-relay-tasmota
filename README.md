@@ -184,5 +184,62 @@ Você pode usar o botão **Toggle** para testar o funcionamento do relé ou disp
 - Pressione **TOGGLE** para acionar o relé
 - Monitore a conexão MQTT no broker (ex: com MQTT Explorer)
 
+#  Configuração Tasmota: Manter Relé (GPIO5) Ligado por 3 Segundos
+
+Como configurar o relé conectado à **GPIO5 (D1)** no Mini Lolin D1 (ESP8266) para **ligar por 3 segundos** sempre que acionado, usando **regras (Rules)** no Tasmota.
+
+---
+
+## 📍 Configuração do GPIO no Tasmota
+
+| Função  | Nome na placa | GPIO   | Configuração no Tasmota |
+|---------|----------------|--------|--------------------------|
+| Relé 1  | D1             | GPIO5  | `Relay1 (21)`            |
+
+---
+
+## Regra para ligar o relé por 3 segundos
+
+1. Acesse o Tasmota via navegador: `http://IP_DO_DISPOSITIVO`
+2. Vá até o menu: **Console**
+3. Insira os comandos abaixo:
+
+```bash
+Rule1 on Power1#State=1 do backlog Delay 30; Power1 0 endon
+Rule1 1
+```
+
+---
+
+### 🧠 Explicação
+
+- `Power1#State=1`: Detecta quando o relé é ligado
+- `Delay 30`: Aguarda 3 segundos (30 × 0,1s)
+- `Power1 0`: Desliga o relé
+- `Rule1 1`: Ativa a regra 1
+
+---
+
+##  Teste
+
+- **Via botão físico**: Certifique-se de que um botão está conectado e configurado como `Button1 (17)` em outro GPIO.
+- **Via MQTT**: Envie o comando:
+
+```bash
+cmnd/NOME_DO_TOPICO/Power1 ON
+```
+
+O relé ligará por 3 segundos e desligará automaticamente.
+
+---
+
+## ⚠️ Observações
+
+- Certifique-se de que a **GPIO5** está configurada corretamente como `Relay1 (21)`
+- A lógica da regra serve para **qualquer GPIO**, desde que você use o `PowerX` correspondente (Power1, Power2, etc.)
+
+---
+
+
 ---
 
