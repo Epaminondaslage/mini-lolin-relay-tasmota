@@ -190,7 +190,7 @@ Como configurar o relé conectado à **GPIO5 (D1)** no Mini Lolin D1 (ESP8266) p
 
 ---
 
-## 📍 Configuração do GPIO no Tasmota
+##  Configuração do GPIO no Tasmota
 
 | Função  | Nome na placa | GPIO   | Configuração no Tasmota |
 |---------|----------------|--------|--------------------------|
@@ -211,7 +211,7 @@ Rule1 1
 
 ---
 
-### 🧠 Explicação
+###  Explicação
 
 - `Power1#State=1`: Detecta quando o relé é ligado
 - `Delay 30`: Aguarda 3 segundos (30 × 0,1s)
@@ -233,10 +233,93 @@ O relé ligará por 3 segundos e desligará automaticamente.
 
 ---
 
-## ⚠️ Observações
+##  Observações
 
 - Certifique-se de que a **GPIO5** está configurada corretamente como `Relay1 (21)`
 - A lógica da regra serve para **qualquer GPIO**, desde que você use o `PowerX` correspondente (Power1, Power2, etc.)
+
+---
+# ⏱️ Uso do PulseTime no Tasmota
+
+`PulseTime` é uma funcionalidade do Tasmota que permite **ligar um relé por um tempo determinado automaticamente**. É ideal para controles temporizados, como sirenes, lâmpadas ou motores que devem desligar sozinhos.
+
+---
+
+##  Sintaxe do comando
+
+```bash
+PulseTimeX Y
+```
+
+- `X` → Número do relé (ex: 1 para Power1, 2 para Power2...)
+- `Y` → Duração do tempo (veja explicação abaixo)
+
+---
+
+##  Interpretação dos valores
+
+| Valor de Y       | Tempo Real                    |
+|------------------|-------------------------------|
+| 0                | Desativa o temporizador       |
+| 1 a 111          | Tempo em **segundos**         |
+| 112 a 64999      | Tempo em **décimos de segundo** (`Y / 10`) |
+
+> Exemplo: `PulseTime1 30` → liga o relé 1 por **3 segundos**
+
+---
+
+##  Exemplos práticos
+
+###  Ligar relé por 15 segundos:
+```bash
+PulseTime1 15
+```
+
+###  Ligar relé por 3 segundos:
+```bash
+PulseTime1 30
+```
+
+### Desativar o desligamento automático:
+```bash
+PulseTime1 0
+```
+
+---
+
+##  Como testar
+
+1. Acesse o console do Tasmota via navegador (`http://IP_DO_DISPOSITIVO`)
+2. Envie o comando `PulseTime1 30`
+3. Ligue o relé com `Power1 ON`
+4. Ele desligará automaticamente após 3 segundos
+
+---
+
+## 🔎 Verificando o estado atual do PulseTime
+
+Use este comando:
+
+```bash
+PulseTime1
+```
+
+Exemplo de resposta:
+
+```json
+{"PulseTime1":{"Set":30,"Remaining":0}}
+```
+
+- `Set`: tempo configurado
+- `Remaining`: tempo restante (mostra 0 se o relé estiver desligado)
+
+---
+
+##  Importante
+
+- `PulseTime` **funciona sem regras** (`Rule`) — é mais simples para ações temporizadas
+- Serve para **qualquer relé configurado** como `RelayX`
+- Pode ser usado em conjunto com botão físico ou comandos MQTT
 
 ---
 
